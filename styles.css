@@ -1,0 +1,160 @@
+/*main styling*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.header-container {
+    background-color: #120323;
+    color: #97bf04;;
+    padding: 1rem; 
+}
+
+#container {
+    display: flex;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+  }
+  figure img:nth-of-type(1) {
+    border: 5px solid #d9043d;
+}
+
+aside {
+    background-color: #97bf04;
+    color: #120323;
+    padding: 20px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* less than 1000px*/
+@media screen and (max-width: 1000px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    img {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0;
+        order: 1;
+    }
+
+    main {
+        order: 0;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+}
+
+/*greater that 1000px*/
+@media screen and (min-width: 1000px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        align-items: flex-start;
+    }
+
+    figure {
+        flex: 1 0 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    aside {
+        flex: 1;
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    figure > img {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/*less than 768px*/
+@media screen and (max-width:768px) {
+    .header-container {
+        flex-direction: column; 
+    }
+
+    #container {
+        flex-direction: column; 
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    figure > img {
+        flex-direction: column;
+        width: 100%; 
+        max-width: none; 
+    }
+
+    aside {
+        width: 100%;
+        align-self: center;
+    }
+}
+
