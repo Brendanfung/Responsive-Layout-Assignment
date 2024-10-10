@@ -12,8 +12,11 @@ body {
 
 .header-container {
     background-color: #120323;
-    color: #97bf04;;
+    color: #97bf04;
     padding: 1rem; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 #container {
