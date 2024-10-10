@@ -24,7 +24,8 @@ body {
 .header-container>img {
     max-width: 157px;
     max-height:150px;
-  }
+}
+
   figure img:nth-of-type(1) {
     border: 5px solid #d9043d;
 }
